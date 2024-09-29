@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Raleway', 'Lato', 'Noto Sans';
+}
+
+html,
+Body {
+    background-color: #111;
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+#bubble {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 60%),
+        radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0) 70%);
+
+    background-color: rgba(173, 216, 230, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5),
+        inset -20px -20px 30px rgba(0, 0, 255, 0.3),
+        inset 10px 10px 15px rgba(255, 255, 255, 0.5);
+
+    position: relative;
+}
+
+#bubble::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
