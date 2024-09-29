@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:  'Poppins', 'Raleway', 'Lato', 'Noto Sans';
+}
+
+html, Body{
+    background-color: #111;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-image: url("https://wallpaperaccess.com/full/2548059.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#nav{
+    /* background-color: rgba(255, 255, 255, 0.382);
+    backdrop-filter: blur(10px); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    padding: 40px 50px;
+}
+
+#nav i{
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+#nav h2{
+    font-size: 32px;
+    font-weight: 800;
+}
+
+#full{
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    /* background-color: rgba(255, 255, 255, 0.382); */
+    background-image: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0.2),
+        rgba(53, 53, 53, 0.2)
+    );
+    top: 0;
+    right: -40%;
+    backdrop-filter: blur(10px);
+    padding: 150px 70px;
+    background-size: 60px;
+}
+
+#full h4{
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#full i{
+    position: absolute;
+    right: 15%;
+    top: 8%;
+    font-size: 40px;
+    cursor: pointer;
+    font-weight: 800;
+    color: white;
+}
